@@ -1,0 +1,12 @@
+<template name="DragableWindow">
+    <div class="dragable-window {{windowClass}}">
+        {{> Template.contentBlock context=windowContext instance=instance}}
+    </div>
+    {{#if backdrop}}
+        <div class="backdrop"></div>
+    {{/if}}
+</template>
+
+<template name="DragableWindowCloseButton">
+    <button type="button" class="close close-dragable-window-button">&times;</button>
+</template>

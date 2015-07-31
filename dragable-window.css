@@ -1,0 +1,63 @@
+.dragable-window {
+    display: none;
+    position: fixed;
+
+    z-index: 1054;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.73);
+
+    background: white;
+}
+
+.dragable-window-header {
+    padding: 10px;
+    font-size: 20px;
+
+    border-bottom: 1px solid lightgray;
+    border-radius: 5px 5px 0 0;
+}
+
+.dragable-title {
+    display: inline-block;
+}
+
+.dragable-window-body {
+    margin: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.dragable-window-footer {
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    border-radius: 0 0 5px 5px;
+    text-align: right;
+}
+
+.dragable-small {
+    width: 300px;
+}
+
+.dragable-medium {
+    width: 500px;
+}
+
+.dragable-big {
+    width: 700px;
+}
+
+.dragable-huge {
+    width: 800px;
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 1053;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: .3;
+    background: black;
+    display: none;
+}
