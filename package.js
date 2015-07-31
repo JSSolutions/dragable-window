@@ -2,7 +2,7 @@ Package.describe({
   name: 'jss:dragable-window',
   version: '1.0.0',
   summary: 'Fully customizable dragable window',
-  git: '',
+  git: 'https://github.com/JSSolutions/dragable-window',
   documentation: 'README.md'
 });
 
