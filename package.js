@@ -11,7 +11,7 @@ Package.onUse(function (api) {
   api.use('templating');
   api.use('coffeescript');
   api.use('reactive-var');
-  api.use('workman:templating-ext');
-  api.use('linto:jquery-ui');
+  api.use('workman:templating-ext@0.0.3');
+  api.use('linto:jquery-ui@1.11.2');
   api.addFiles(['dragable-window.html', 'dragable-window.coffee', 'dragable-window.css'], 'client');
 });
