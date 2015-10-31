@@ -1,5 +1,6 @@
 Template.DragableWindow.onCreated ->
   @windowContext = new ReactiveVar(@data?.context)
+  @windowPosition = new ReactiveVar(@data?.windowPosition)
 
   #public method for changing context
   @setContext = (newContext) => @windowContext.set newContext
@@ -20,9 +21,9 @@ Template.DragableWindow.onRendered ->
     bodySize = getElementSize $(tmpl.firstNode).parent()
     windowSize = getElementSize $(tmpl.firstNode)
     calculateCenter = (dimensionName) -> (bodySize[dimensionName] - windowSize[dimensionName]) / 2
-    windowElement.css
-      left: calculateCenter('width')
-      top: 100
+    position = tmpl.windowPosition.get()
+    if !position then position = {left: calculateCenter('width'), top: 100}
+    windowElement.css position
 
   #initialize control methods for parent view
   @show = (newContext) =>
