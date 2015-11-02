@@ -1,7 +1,11 @@
-##Description
+## dragable-window
+
 Fully customizable draggable window
 
-###Markup
+-----------------------------------
+
+## Markup
+
 ```
 <template name="Home">
     <div class="container">
@@ -31,7 +35,9 @@ Fully customizable draggable window
     </div>
 </template>
 ```
-###Coffee
+
+## Coffee
+
 ```
 Template.Home.helpers
   dragableConfig: ->
