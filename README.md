@@ -1,7 +1,6 @@
 ##Description
-Fully customizable dragable window
+Fully customizable draggable window
 
-Made by [![Professional Meteor Development Studio](http://s30.postimg.org/jfno1g71p/jss_xs.png)](http://jssolutionsdev.com?utm_campaign=Package_Development&utm_medium=github.com&utm_source=Dragable-window) - [Professional Meteor Development Company](http://jssolutionsdev.com?utm_campaign=Package_Development&utm_medium=github.com&utm_source=Dragable-window)
 ###Markup
 ```
 <template name="Home">
@@ -46,3 +45,6 @@ Template.ModalDemoTemplate.events
   'dragable.window.hide .dragable-window-body': (e, tmpl) ->
     console.log 'modal window show event'
 ```
+
+
+Made by [![Professional Meteor Development Studio](http://s30.postimg.org/jfno1g71p/jss_xs.png)](http://jssolutionsdev.com?utm_campaign=Package_Development&utm_medium=github.com&utm_source=Dragable-window) - [Professional Meteor Development Company](http://jssolutionsdev.com?utm_campaign=Package_Development&utm_medium=github.com&utm_source=Dragable-window)
